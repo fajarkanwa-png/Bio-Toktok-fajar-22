@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b0b">
+  <title>Fajar Cit2 | Semua Link</title>
+  <style>
+    :root { --yellow: #ffd400; --bg: #090909; --card: #171717; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; padding: 28px 16px;
+      display: flex; justify-content: center; align-items: center;
+      color: #fff; font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(ellipse at top, #3a3000 0%, #111 42%, var(--bg) 78%);
+    }
+    .page { width: 100%; max-width: 440px; text-align: center; }
+    .logo {
+      width: 94px; height: 94px; margin: 0 auto 16px;
+      display: grid; place-items: center; border-radius: 50%;
+      background: var(--yellow); color: #111; font-size: 40px;
+      box-shadow: 0 0 28px #ffd40055; animation: float 3s ease-in-out infinite;
+    }
+    h1 { margin: 8px 0; font-size: clamp(25px, 7vw, 32px); letter-spacing: 1px; }
+    h1 span { color: var(--yellow); }
+    .subtitle { color: #c7c7c7; margin: 0 0 26px; line-height: 1.5; }
+    .links { display: grid; gap: 13px; }
+    .link {
+      display: flex; align-items: center; gap: 13px; text-align: left;
+      padding: 16px; min-height: 70px; border: 1px solid #393939;
+      border-radius: 16px; background: linear-gradient(135deg, #202020, var(--card));
+      color: white; text-decoration: none; font-weight: 700;
+      transition: transform .2s, border-color .2s, box-shadow .2s;
+      animation: appear .6s both;
+    }
+    .link:nth-child(2) { animation-delay: .12s; }
+    .link:nth-child(3) { animation-delay: .24s; }
+    .link:hover, .link:focus-visible {
+      transform: translateY(-3px); border-color: var(--yellow);
+      box-shadow: 0 8px 24px #ffd40020; outline: none;
+    }
+    .emoji { width: 42px; height: 42px; flex: 0 0 42px; display: grid; place-items: center;
+      background: #ffd4001c; border-radius: 12px; font-size: 23px; }
+    .copy { display: block; font-size: 12px; font-weight: 400; color: #bdbdbd; margin-top: 5px; }
+    footer { margin-top: 25px; color: #858585; font-size: 12px; }
+    @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+    @keyframes appear { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="logo" aria-hidden="true">⚡</div>
+    <h1>FAJAR <span>CIT2</span></h1>
+    <p class="subtitle">Pilih link di bawah ini 👇<br>Semua link resmi dalam satu tempat.</p>
+
+    <nav class="links" aria-label="Link utama">
+      <a class="link" href="https://fajarkanwa-png.github.io/Fajar-cit2-/" target="_blank" rel="noopener noreferrer">
+        <span class="emoji" aria-hidden="true">🎮</span>
+        <span>Toko Online<span class="copy">Kunjungi website toko</span></span>
+      </a>
+      <a class="link" href="https://wa.me/6281287811860" target="_blank" rel="noopener noreferrer">
+        <span class="emoji" aria-hidden="true">💬</span>
+        <span>WhatsApp Admin<span class="copy">Chat ke 0812 8781 1860</span></span>
+      </a>
+      <a class="link" href="https://whatsapp.com/channel/0029VbE7t1t545upI9PhSN1q" target="_blank" rel="noopener noreferrer">
+        <span class="emoji" aria-hidden="true">🔥</span>
+        <span>Saluran WhatsApp<span class="copy">Ikuti kabar dan update</span></span>
+      </a>
+    </nav>
+
+    <footer>© Fajar Cit2 • Terima kasih sudah berkunjung</footer>
+  </main>
+</body>
+</html>
